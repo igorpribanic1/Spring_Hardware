@@ -1,10 +1,10 @@
 package com.example.Hardware.service;
 
-import com.example.Hardware.domain.Hardware;
+import com.example.Hardware.dto.HardwareDTO;
 
 import java.util.List;
 
 public interface HardwareService {
-    List<Hardware> getAllHardware();
-    List<Hardware> getHardwareByCode(String code);
+    List<HardwareDTO> getAllHardware();
+    List<HardwareDTO> getHardwareByCode(String code);
 }
