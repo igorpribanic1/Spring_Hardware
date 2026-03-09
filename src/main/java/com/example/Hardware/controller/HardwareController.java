@@ -30,8 +30,8 @@ public class HardwareController {
 
     @PostMapping("/new")
     public ResponseEntity<?> saveNewHardware(@Valid @RequestBody HardwareDTO hardwareDTO) {
-        Integer generatedId = hardwareService.saveNewHardware(hardwareDTO);
-        return ResponseEntity.ok(generatedId);
+        HardwareDTO savedHardwareDTO = hardwareService.saveNewHardware(hardwareDTO);
+        return ResponseEntity.ok(savedHardwareDTO);
     }
 
     @PutMapping("/{hardwareId}")

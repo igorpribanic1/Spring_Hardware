@@ -25,7 +25,7 @@ public class HardwareDTO {
     private BigDecimal price;
 
     @NotNull(message = "Hardware type cannot be blank!")
-    private HardwareType hardwareType;
+    private String hardwareTypeName;
 
     @PositiveOrZero(message = "Hardware quantity must be positive or zero!")
     private Integer quantity;
